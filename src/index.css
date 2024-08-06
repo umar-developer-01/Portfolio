@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .btn {
+      @apply rounded-s-full px-10 py-3 rounded-e-full text-white ;
+    }
+    .btn-orange{
+        @apply bg-orange-400
+    }
+    .btn-lighter{
+        @apply bg-orange-200 text-orange-600
+    }
+    .btn:hover{
+        @apply hover:bg-gray-900 text-white
+    }
+    .btn:focus{
+        @apply focus:bg-gray-900 text-white
+    }
+    .btn:active{
+        @apply active:bg-gray-900 text-white
+    }
+   
+    
+  }
+
+
+
+.clip-poly {
+    clip-path: polygon(0 0, calc(100% - 150px) 0, 100% 100px, 100% 100%, 0 150%);
+}
+
+.clip-corner {
+  clip-path: polygon(18px 0%, 100% 0, 100% 90px);
+}
+  
+  .bg-gr {
+    background-image: linear-gradient(180deg, #fff 50%, #37222200 90%, #24223700), 
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, .028), rgba(0, 0, 0, .028) 15px, #0000 0, #0000 30px);
+  transition: background-image 1s;
+}
+
+/* .bg-gr{background-image: linear-gradient(180deg, #fff 50%, #37222200 90%, #24223700), 
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, .028), rgba(0, 0, 0, .028) 15px, #0000 0, #0000 30px);} */
