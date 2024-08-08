@@ -6,14 +6,14 @@ import WorkEat from "../assets/images/work-eat.png";
 import CryptoRolls from "../assets/images/crypto-rolls.png";
 
 
-export const Menulist = [
-  { id: "1", icon: Logo, title: "Home", url: "/" },
-  { id: "2", icon: Logo, title: "Experience", url: "/" },
-  { id: "3", icon: Logo, title: "Hire Me", url: "/" },
-  { id: "4", icon: Logo, title: "Umar", url: "/" },
-  { id: "5", icon: Logo, title: "Resume", url: "/" },
-  { id: "6", icon: Logo, title: "Project", url: "/projects" },
-  { id: "7", icon: Logo, title: "Contact", url: "/" },
+export const menuList = [
+  { id: "1", icon: Logo, title: "Home", url: "/",ref:"intro" },
+  { id: "2", icon: Logo, title: "Experience", url: "/", ref:'experience' },
+  { id: "3", icon: Logo, title: "Hire Me", url: "/" ,ref:'hireme'},
+  { id: "4", icon: Logo, title: "Umar", url: "/",ref:"" },
+  { id: "5", icon: Logo, title: "Resume", url: "/",ref:"" },
+  { id: "6", icon: Logo, title: "Project", url: "/",ref:"portfolio" },
+  { id: "7", icon: Logo, title: "Contact", url: "/",ref:'hireme' },
 ];
 
 export const myExperience = [

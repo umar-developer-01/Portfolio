@@ -1,17 +1,21 @@
-import React, { useCallback, useState }  from "react";
-import { Menulist } from "../../constant/data";
+import React, {  useState }  from "react";
+import { menuList } from "../../constant/data";
+import { useAuth } from "../../context/appContext";
 import { Link } from "react-router-dom";
 
 const Header = () => {
 
   const [isToggled, setIsToggled] = useState(false);
+  const { scrollToComponent } = useAuth();
+
+
 
   const handleClick = () => {
     setIsToggled(!isToggled);
   };
-  const mobileLogo = Menulist.filter(item => item.title === "Umar");
+  const mobileLogo = menuList.filter(item => item.title === "Umar");
   const orderedMenulist = [
-    ...Menulist.filter(item => item.title !== "Umar")
+    ...menuList.filter(item => item.title !== "Umar")
   ];
 
 
@@ -94,11 +98,12 @@ const Header = () => {
             
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex md:space-x-3 items-center">
-                {Menulist.map((item, index) => {
+                {menuList.map((item, index) => {
                   return (
-                    <Link to={item.url}
+                    <div
                       className="rounded-md px-2 md:px-3 py-2 text-sm font-medium text-white"
                       key={index}
+                      onClick={() => scrollToComponent(item.ref)}
                     >
                       <span className="flex items-center gap-4">
                         <img
@@ -120,7 +125,7 @@ const Header = () => {
                           {item.title}
                         </span>
                       </span>
-                    </Link>
+                    </div>
                   );
                 })}
               </div>

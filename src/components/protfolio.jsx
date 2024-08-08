@@ -1,3 +1,5 @@
+import React, { forwardRef } from 'react';
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectCreative } from 'swiper/modules';
@@ -8,9 +10,10 @@ import "swiper/css";
 import { portfolio } from "../constant/data";
 import { Link } from "react-router-dom";
 
-const Portfolio = () => {
+// eslint-disable-next-line react/display-name
+const Portfolio = forwardRef((props, ref) => {
   return (
-    <div className="relative py-12 md:py-28 border-t overflow-hidden">
+    <div className="relative py-12 md:py-28 border-t overflow-hidden" ref={ref} {...props}>
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-6 xl:px-0 ">
         <div className="flex justify-between items-end">
           <h3 className=" text-3xl md:xl:text-4xl xl:text-4xl font-black">
@@ -74,5 +77,5 @@ const Portfolio = () => {
 
     </div>
   );
-};
+});
 export default Portfolio;
