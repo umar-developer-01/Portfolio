@@ -17,10 +17,30 @@ export const Menulist = [
 ];
 
 export const myExperience = [
-  { id: '1', company: "Websultanate Software Technologies", duration: "july 2021- July 2024", experience: "Full Stack Developer", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales` },
-  { id: '2', company: "e.Soft Technologies, Lucknow", duration: "Sep 2016- July 2020", experience: "UI/UX Designer", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales` },
-  { id: '3', company: "Syngsy, Lucknow", duration: "Sep 2016- July 2020", experience: "UI Developer", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales` },
-  { id: '4', company: "Web Sultanate, Lucknow", duration: "Sep 2016- July 2020", experience: "Frontend Developer", description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus nunc, posuere in justo vulputate, bibendum sodales` },
+  {
+    id: '1',
+    company: "Websultanate Software Technologies",
+    duration: "July 2021- July 2024",
+    experience: "Full Stack Developer",
+    description: [
+      "Honed skills in creating robust and scalable web applications.",
+      "Developed REST APIs and designed scalable schemas using MongoDB and SQL.",
+      "Ensured efficient data management and seamless backend operations.",
+      "Crafted reusable components with React, enhancing development speed and maintainability.",
+      "Successfully delivered projects such as Lucky Rush and Work Eat.",
+      "Used Redux and React Context API for state management",
+    ]
+  },
+  {
+    id: '2',
+    company: "College Student & Self Employed",
+    duration: " August 2019 - June 2021",
+    experience: "Learning Full Stack Development",
+    description: [
+      "During my fourth year of engineering, I chose to focus on building web applications with JavaScript.",
+      "I self-taught the basics of JavaScript, CSS, and Node.js, and built several web applications for my portfolio. This proactive approach and hands-on experience helped me land a job in the industry."
+    ]
+  },
 ];
 
 export const portfolio = [
