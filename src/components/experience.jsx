@@ -1,10 +1,12 @@
-import React from "react";
+
+import React, { forwardRef } from 'react';
 import { myExperience } from "../constant/data";
 
-const Experience = () => {
 
+// eslint-disable-next-line react/display-name
+const Experience = forwardRef((props, ref) => {
   return (
-    <div className="relative py-12 md:py-28 border-t overflow-hidden">
+    <div className="relative py-12 md:py-28 border-t overflow-hidden" ref={ref} {...props}>
       <div className="absolute grid h-full w-full grid-cols-2 -space-x-52 opacity-40 dark:opacity-80">
         <div className="h-full bg-gradient-to-br from-orange-400 to-purple-200 blur-[106px] dark:from-blue-700"></div>
         <div className="h-full bg-gradient-to-r from-cyan-100 to-indigo-400 blur-[106px] dark:to-indigo-600"></div>
@@ -53,6 +55,6 @@ const Experience = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Experience;

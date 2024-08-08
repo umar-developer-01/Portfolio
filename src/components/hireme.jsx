@@ -1,8 +1,11 @@
-import react from "react";
+import React, { forwardRef } from 'react';
 import umar from "../assets/images/umar-hire.png";
-const Hireme = () => {
+
+// eslint-disable-next-line react/display-name
+const Hireme = forwardRef((props, ref) => {
+
   return (
-    <div className="py-12 xl:pt-28 bg-gray-100 ">
+    <div className="py-12 xl:pt-28 bg-gray-100" ref={ref} {...props}>
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-6 xl:px-0">
         <div className="relative p-0 md:ps-10 md:pb-0 md:pe-0 md:pt-10">
           <div className="flex flex-wrap md:flex-nowrap  font-sans relative z-10 items-center">
@@ -67,6 +70,6 @@ const Hireme = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Hireme;
