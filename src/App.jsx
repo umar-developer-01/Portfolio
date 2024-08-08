@@ -7,7 +7,9 @@ import Project from "./pages/projects";
 
 function App() {
   return (
-    <Router>
+
+    <>
+        <Router>
       <Header />
       <div className="min-h-screen">
         <Routes>
@@ -16,7 +18,9 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </Router>
+      </Router>
+
+    </>
   );
 }
 
