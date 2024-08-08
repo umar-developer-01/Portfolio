@@ -13,7 +13,7 @@ const Footer = () => {
                                 <img className='font-semibold w-12 h-12 bg-orange-600 rounded-full' src={Logo} alt='Umar'/>
                                 <span class="text-xl text-white font-bold uppercase">Umar</span>
                             </a>
-                            <a href="https://tailus.io" className="inline-block text-sm">Loosely designed in <span className='font-semibold text-white'>Figma</span> and coded in <span className=' text-white'>Visual Studio Code</span> by yours truly. Built with <span className=' text-white'>ReactJS</span> and <span className=' text-white'>Tailwind CSS</span>, deployed with Vercel. All text is set in the Inter typeface.</a>
+                            <a href="https://tailus.io" className="inline-block text-sm">Developed by Umar Khan  and coded in <span className=' text-white'> in Visual Studio Code</span> by yours truly. Built with <span className=' text-white'>ReactJS</span> and <span className=' text-white'>Tailwind CSS</span>. All text is set in the Inter typeface.</a>
                         </div>
 
                         <div className="flex gap-6">
