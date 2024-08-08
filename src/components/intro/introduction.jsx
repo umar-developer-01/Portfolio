@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useAuth } from "../../context/appContext";
+
 
 const Introduction = () => {
-
+    const { scrollToComponent } = useAuth();
     return (
         <div className="text-center flex flex-col justify-center md:ps-12 md:w-6/12 md:text-left lg:w-6/12">
             <h1 className="font-black dark:text-white text-4xl md:text-4xl xl:text-5xl">
@@ -17,13 +18,14 @@ const Introduction = () => {
                 <div className="mt-4 xl:mt-8 flex justify-center gap-4 sm:gap-4 md:justify-start">
                     <button
                         className="btn btn-orange"
+                        onClick={() => scrollToComponent("portfolio")}
                     >
                         Projects
                     </button>
 
                     <button
-
                         className="btn btn-lighter"
+                        onClick={() => scrollToComponent("hireme")}
                     >
 
                         Hire me
