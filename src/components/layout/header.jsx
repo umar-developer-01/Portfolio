@@ -21,6 +21,32 @@ const Header = () => {
   }
 
 
+  const handleScroll = (ref) =>{
+     if(ref !== ""){
+      scrollToComponent(ref);
+     } else{
+      handleDownload();
+     }
+
+  }
+
+
+  const handleDownload = () => {
+    // Path to your PDF file in the public/assets directory
+    const pdfPath = '/assets/resume.pdf';
+    
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = pdfPath;
+    link.download = 'umar-resume.pdf'; // The name of the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    
+    // Clean up by removing the link element
+    document.body.removeChild(link);
+  };
+
+
   return (
     <header className="mt-10 sticky md:relative top-5 z-20 md:mt-4 mx-auto max-w-7xl px-6 md:px-12 lg:px-6 xl:px-0">
       <nav className="bg-gray-900 rounded-xl md:rounded-s-full md:rounded-e-full">
@@ -104,7 +130,7 @@ const Header = () => {
                       <div
                         className="rounded-md px-2 md:px-3 py-2 text-sm font-medium text-white"
                         key={index}
-                        onClick={() => scrollToComponent(item.ref)}
+                        onClick={() =>handleScroll(item.ref)} 
                       >
                         <span className="flex items-center gap-4">
                           <img
