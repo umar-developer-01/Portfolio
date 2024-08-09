@@ -33,12 +33,12 @@ const Header = () => {
 
   const handleDownload = () => {
     // Path to your PDF file in the public/assets directory
-    const pdfPath = '/assets/resume.pdf';
-    
+    const pdfPath = '/resume.pdf'; // Correct path for Vite public directory
+
     // Create a temporary link element
     const link = document.createElement('a');
     link.href = pdfPath;
-    link.download = 'umar-resume.pdf'; // The name of the downloaded file
+    link.setAttribute('download', 'resume.pdf'); // Ensure download attribute is set
     document.body.appendChild(link);
     link.click();
     
