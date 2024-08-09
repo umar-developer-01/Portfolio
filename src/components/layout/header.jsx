@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { menuList } from "../../constant/data";
+import { useLocation,useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/appContext";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isToggled, setIsToggled] = useState(false);
   const { scrollToComponent } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const handleToggle = () => {
     setIsToggled(!isToggled);
@@ -23,7 +26,14 @@ const Header = () => {
 
   const handleScroll = (ref) =>{
      if(ref !== ""){
-      scrollToComponent(ref);
+      // if the user is not on the homepage then also bring him to the home page also scroll to that particular section
+      if (location.pathname !== "/") {
+        navigate("/");
+        setTimeout(() => scrollToComponent(ref), 100); // Scroll after navigation
+      }else{
+        scrollToComponent(ref);
+      }
+      
      } else{
       handleDownload();
      }
