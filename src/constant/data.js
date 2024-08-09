@@ -50,8 +50,6 @@ export const portfolio = [
     category: "Online Casino",
     descriptions: [
       `Lucky Rush is an Online Gaming Casino`,
-      `Technical Lead of Lucky Rush, I led the team of developers and built this project`,
-      `It is a Casnio-based application where users can play games and deposit amounts`,
       `Build the KYC(Know your Customer) where users fill up their information`,
       `Added Veriff Kyc which is highly automated identity  verification for fraud prevention`,
       `Created a wallet deposit system and integrated Now Payments and X-Coins`,

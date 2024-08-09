@@ -16,7 +16,7 @@ const Project = () => {
         <div className="relative mt-8">
           {portfolio.map((item, index) => (
             <div
-              className={`flex flex-wrap md:flex-nowrap gap-0 rounded-3xl overflow-hidden bg-white shadow-[0px_0px_0px_1px_rgba(9,9,11,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] ${
+              className={`flex items-center flex-wrap md:flex-nowrap gap-0 rounded-3xl overflow-hidden bg-white shadow-[0px_0px_0px_1px_rgba(9,9,11,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] ${
                 index == portfolio.length - 1 ? "" : "mb-10"
               }`}
               key={index}
@@ -49,6 +49,7 @@ const Project = () => {
                   </div>
                 </div>
               </div>
+       
               <div
                 className={`order-1 ${
                   index % 2 !== 0 ? "md:order-2" : "md:order-1"
@@ -60,7 +61,9 @@ const Project = () => {
                   alt="project"
                 />
               </div>
+           
             </div>
+
           ))}
         </div>
       </div>
