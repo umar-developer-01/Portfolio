@@ -12,9 +12,9 @@ const Homepage = () => {
   return (
     <>
       <Intro ref={(ref_) => setRef("intro", ref_)} />
+      <Portfolio ref={(ref_) => setRef("portfolio", ref_)} />
       <Experience ref={(ref_) => setRef("experience",ref_)} />
       <Hireme ref={(ref_) => setRef("hireme", ref_)} />
-      <Portfolio ref={(ref_) => setRef("portfolio", ref_)} />
     </>
   );
 };
