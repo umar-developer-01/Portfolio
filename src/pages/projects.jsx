@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { portfolio } from "../constant/data";
-import { Link } from "react-router-dom";
+
 
 const Project = () => {
   useEffect(() => {
@@ -11,7 +11,7 @@ const Project = () => {
     <div className="py-12 md:py-28 ">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-6 xl:px-0">
         <h3 className="text-3xl text-center md:xl:text-4xl xl:text-4xl font-black text-gray-900 dark:text-white">
-          My <span className="text-orange-600">Projects</span>
+          <span className="text-orange-600">Projects</span>
         </h3>
         <div className="relative mt-8">
           {portfolio.map((item, index) => (
@@ -35,9 +35,14 @@ const Project = () => {
                     {item.descriptions.substring(0, 300)}...
                   </p>
                   <div className="flex mt-4">
-                    <Link to="/" className="btn btn-orange">
+                    <a
+                      href={item.url}
+                      className="btn btn-orange"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <span className="">View Projects</span>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
