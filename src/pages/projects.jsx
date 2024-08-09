@@ -24,7 +24,7 @@ const Project = () => {
               <div
                 className={`${
                   index % 2 !== 0 ? "order-1" : "order-2"
-                } p-8 md:p-14 w-full flex items-center`}
+                } px-8 py-6 md:px-14 w-full flex items-center`}
               >
                 <div>
                   <h4 className="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-3">
