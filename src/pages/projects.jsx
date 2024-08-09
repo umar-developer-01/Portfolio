@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { portfolio } from "../constant/data";
 import { Link } from "react-router-dom";
+
 const Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="py-12 md:py-28 ">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-6 xl:px-0">
-        <h3 className=" text-3xl text-center md:xl:text-4xl xl:text-4xl font-black text-gray-900 dark:text-white">
+        <h3 className="text-3xl text-center md:xl:text-4xl xl:text-4xl font-black text-gray-900 dark:text-white">
           My <span className="text-orange-600">Projects</span>
         </h3>
         <div className="relative mt-8">
@@ -37,12 +42,14 @@ const Project = () => {
                 </div>
               </div>
               <div
-                className={`${index % 2 !== 0 ? "md:order-2" : "md:order-1"} w-full`}
+                className={`${
+                  index % 2 !== 0 ? "md:order-2" : "md:order-1"
+                } w-full h-full`}
               >
                 <img
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                   src={item.img}
-                  alt="esoft"
+                  alt="project"
                 />
               </div>
             </div>
