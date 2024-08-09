@@ -49,7 +49,16 @@ export const portfolio = [
     img: LuckyRushHome,
     category: "Online Casino",
     descriptions: [
-      `Build, style, and ship high-quality websites`]
+      `Lucky Rush is an Online Gaming Casino`,
+      `Technical Lead of Lucky Rush, I led the team of developers and built this project`,
+      `It is a Casnio-based application where users can play games and deposit amounts`,
+      `Build the KYC(Know your Customer) where users fill up their information`,
+      `Added Veriff Kyc which is highly automated identity  verification for fraud prevention`,
+      `Created a wallet deposit system and integrated Now Payments and X-Coins`,
+      `Created a support chat system to address the user's queries`,
+      `Notifications to notify the user`,
+      `Added MID source Merchant Services for accepting the payments`
+    ]
   },
   {
     id: "2",
@@ -58,7 +67,13 @@ export const portfolio = [
     img: CalendarPro,
     category: "Online Appointment Booking System",
     descriptions:[
-      `Build, style, and ship high-quality websites`]
+      `A software for businesses to manage their work.`,
+      `As a team member I developed the functionality to add the Calendar to the app`,
+      `Created customer creation functionality and invoice handling`,
+      `Integrated Xero Accounting Software and does the two-way synchronization`,
+      `Created the Inventory module so that businesses can add inventory items`,
+      `Appointment feature so that appointments can be booked for the customers`
+   ]
   },
   {
     id: "3",
@@ -67,7 +82,12 @@ export const portfolio = [
     img: WorkEat,
     category: "Food Order",
     descriptions:[
-      `Build, style, and ship high-quality websites`]
+      `Food Ordering Platform for Employees`,
+      `Added Kitchen Feature in the Admin Panel`,
+      `Users from the User panel can order food`,
+      `In the Kitchen feature added functionality to add the dishes`,
+      `Added a point based system which reward the users who orders food regularly`
+    ]
   },
   {
     id: "4",
@@ -76,6 +96,10 @@ export const portfolio = [
     img: CryptoRolls,
     category: "Online Casino & Gaming",
     descriptions:[
-      `Build, style, and ship high-quality websites`]
+      `It is a full casino based application.`,
+      `Added third party games like slots, poker and lottery games`,
+      `These third party games from Evolution gaming`,
+      `Integrated Cash app payment and real time notifications`
+    ]
   },
 ];

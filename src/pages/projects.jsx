@@ -22,9 +22,7 @@ const Project = () => {
               key={index}
             >
               <div
-                className={`${
-                  index % 2 !== 0 ? "order-1" : "order-2"
-                } px-8 py-6 md:px-14 w-full flex items-center`}
+                className={`order-2 px-8 py-6 md:px-14 w-full flex items-center`}
               >
                 <div>
                   <h4 className="text-2xl md:text-3xl font-black text-gray-900 dark:text-white mb-3">
@@ -32,7 +30,12 @@ const Project = () => {
                   </h4>
                   <p className="mb-4">{item.category}</p>
                   <p className="text-lg">
-                    {item.descriptions.substring(0, 300)}...
+                     <ul className="list-disc pl-5">
+                        {item.descriptions.map((desc, idx) => (
+                          <li key={idx}>{desc}</li>
+                        ))}
+                      </ul>
+                    
                   </p>
                   <div className="flex mt-4">
                     <a
@@ -47,7 +50,7 @@ const Project = () => {
                 </div>
               </div>
               <div
-                className={`${
+                className={`order-1 ${
                   index % 2 !== 0 ? "md:order-2" : "md:order-1"
                 } w-full h-full`}
               >
