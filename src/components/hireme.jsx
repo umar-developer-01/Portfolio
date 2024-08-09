@@ -36,13 +36,13 @@ const Hireme = forwardRef((props, ref) => {
          
               </div>
 
-              <div className="flex space-x-4 text-sm font-medium border-t border-white mt-5 pt-5">
+              <div className="flex text-sm font-medium border-t border-white mt-5 pt-5">
                 <div className="flex-auto flex space-x-4">
                   <a
                     href="https://www.linkedin.com/in/umar-ali-k/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-orange"
+                    className="btn btn-orange px-6 md:px-10"
                   >
                     LinkedIn
                   </a>
@@ -51,7 +51,7 @@ const Hireme = forwardRef((props, ref) => {
                     href="https://wa.me/916394913131"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-lighter"
+                    className="btn btn-lighter px-6 md:px-10"
                   >
                     Whatsapp
                   </a>
