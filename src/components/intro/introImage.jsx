@@ -1,5 +1,5 @@
 import React from "react";
-import mainImage from '../../assets/umar.png'
+import mainImage from '/assets/umar.png'
 
 const IntroImage = () => {
     return (
