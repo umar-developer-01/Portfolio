@@ -1,8 +1,8 @@
-import Logo from "/assets/images/umar-logo.png";
-import LuckyRushHome from "/assets/images/lucky-rush.png";
-import CalendarPro from "/assets/images/calendar-pro.png";
-import WorkEat from "/assets/images/work-eat.png";
-import CryptoRolls from "/assets/images/crypto-rolls.png";
+import Logo from "../assets/images/umar-logo.png";
+import LuckyRushHome from "../assets/images/lucky-rush.png";
+import CalendarPro from "../assets/images/calendar-pro.png";
+import WorkEat from "../assets/images/work-eat.png";
+import CryptoRolls from "../assets/images/crypto-rolls.png";
 
 export const menuList = [
   { id: "1", icon: Logo, title: "Home", url: "/", ref: "intro" },
