@@ -1,10 +1,9 @@
-import React from "react";
 import mainImage from '../../assets/umar.png'
 
 const IntroImage = () => {
     return (
         <>
-            <div className="relative mt-10 md:mt-20 md:mt-0 md:w-6/12 flex items-end">
+            <div className="relative mt-10  md:mt-0 md:w-6/12 flex items-end">
                 <div className="flex-grow">
                     <img
                         className="h-full w-full block object-cover object-left dark:hidden"
