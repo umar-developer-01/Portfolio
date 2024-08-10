@@ -1,5 +1,5 @@
 import React, { forwardRef } from 'react';
-import umar from "../assets/images/umar-hire.png";
+import umar from "/assets/images/umar-hire.png";
 
 // eslint-disable-next-line react/display-name
 const Hireme = forwardRef((props, ref) => {
